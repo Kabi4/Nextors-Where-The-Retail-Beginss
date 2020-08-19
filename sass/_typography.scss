@@ -1,0 +1,68 @@
+.container{
+    display: grid;
+    grid-template-rows: 80vh min-content 40vw repeat(3,min-content);
+    grid-template-columns: 8rem minmax(5rem,1fr) repeat(8,minmax(min-content,14rem)) minmax(5rem,1fr);
+}
+%heading-holder{
+    font-weight: 400;
+    font-family: $font-display;
+}
+.heading-1{
+    @extend %heading-holder;
+    font-size: 4.5rem;
+    line-height: 1;
+    color: $color-grey-light-1;
+
+}
+.heading-2{
+    @extend %heading-holder;
+    font-size: 4rem;
+    line-height: 1;
+}
+.heading-3{
+    @extend %heading-holder;
+    font-size: 1.5rem;
+    &--light{
+        color: $color-primary;
+    }
+    &--dark{
+        color: $color-primary-dark;
+    }
+}
+.heading-4{
+    @extend %heading-holder;
+    font-size: 1.9rem;
+    &--light{
+        color: $color-primary;
+    }
+    &--dark{
+        color: $color-grey-dark-1;
+    }
+}
+
+.bs{margin-bottom: 2rem;}
+.bm{margin-bottom: 4rem;}
+.bl{margin-bottom: 6rem;}
+.bxl{margin-bottom: 8rem;}
+
+.btn{
+    padding: 2rem 4rem;
+    background-color: $color-primary;
+    font-weight: 500;
+    font-family: $font-display;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    backface-visibility: none;
+    transition: all 0.2s;
+    box-shadow: 0.3rem 0.5rem 1rem rgba(0,0,0,0.8);
+    &:hover{
+        background-color: $color-primary-dark;
+    }
+    &:active{
+        transform: translateY(3px);
+    }
+}
