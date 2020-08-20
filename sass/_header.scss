@@ -4,6 +4,14 @@
     background-size: cover;
     grid-row: 1/2;
     grid-column: 2/9;
+    @media only screen and (max-width: $bp-layer-9){
+        grid-row: 2/3;
+        grid-column: 1/9;
+    } 
+    @media only screen and (max-width: $bp-layer-8){
+        grid-row: 2/3;
+        grid-column: 1/-1;
+    } 
     color: #aaa;
     padding: 8rem;
     padding-top: 4rem;

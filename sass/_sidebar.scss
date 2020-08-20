@@ -2,6 +2,11 @@
     background-color: $color-primary;
     grid-row: 1/-1;
     grid-column: 1/2;
+    @media only screen and (max-width: $bp-layer-9){
+        grid-row: 1/2;
+        grid-column: 1/-1;
+        
+    } 
     &__btn{
         background-color: #fff;
         height: 2px;
@@ -10,6 +15,9 @@
         margin: 4rem auto;
         border-radius: 0;
         display: block;
+        @media only screen and (max-width: $bp-layer-9){
+            margin: 3rem 5rem auto auto;
+        } 
         &::after,
         &::before{
             content: "";

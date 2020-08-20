@@ -2,7 +2,14 @@
     background-color: $color-grey-light-1;
     grid-row: 5/6;
     grid-column: 2/12;
-
+    @media only screen and (max-width: $bp-layer-9){
+        grid-row: 6/7;
+        grid-column: 1/12;
+    }
+    @media only screen and (max-width: $bp-layer-8){
+        grid-row: 8/9;
+        grid-column: 1/12;
+    }  
     display: grid;
 
     grid-template-columns: repeat(8,1fr);

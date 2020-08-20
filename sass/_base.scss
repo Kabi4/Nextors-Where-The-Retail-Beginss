@@ -10,6 +10,10 @@ $color-grey-light-2: #aaa;
 $color-grey-dark-1: #54483A;
 $color-grey-dark-2: #6D5D4B;
 
+$bp-layer-10: 75em;
+$bp-layer-9: 68.75em;
+$bp-layer-8: 53.125em;
+
 // FONT VARIABLES
 $font-primary: 'Nunito', sans-serif;
 $font-display: 'Josefin Sans', sans-serif;
@@ -25,6 +29,9 @@ $font-display: 'Josefin Sans', sans-serif;
 html{
     box-sizing: border-box;
     font-size: 62.5%;
+    @media only screen and (max-width: $bp-layer-10){
+        font-size: 50%;
+    } 
     
 }
 
